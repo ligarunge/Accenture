@@ -1,0 +1,26 @@
+h1{
+    color:blue;
+}
+h2, h3 {
+    color:green;
+}
+p {color: purple;
+}
+
+#special-p {
+    color:yellow;
+}
+.color-pink {color: pink;}
+div {
+    color: gold;
+}
+span {
+    color: silver;
+}
+strong span {
+    color: blue;
+}
+.special-span:hover {
+    color: red;
+    cursor: pointer;
+}
