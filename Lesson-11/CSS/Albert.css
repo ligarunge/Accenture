@@ -1,0 +1,12 @@
+h2 {
+    color:blue;
+
+}
+h3 {
+    font-style: italic;
+    color: green;
+    
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

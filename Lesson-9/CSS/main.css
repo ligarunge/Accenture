@@ -1,27 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap');
 
-div {
+.big-text {
+color: rgba(255, 0, 0, 0.527);
+font-size: 30px;
+font-weight: 900;
+
+}
+
+
+.small-text {
+
+    font-style: italic;
+    text-decoration-line: underline;
+    /*text-decoration-color: blue;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;*/
+
+    text-decoration: blue wavy 10px underline;
+}
+
+.some-font {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+.first-div {
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-width: 3px;
+    border-top-width: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.second-div {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+   /* overflow: hidden;*/
+   overflow: scroll;
+}
+
+.image-div {
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    background-image: url("https://i.pinimg.com/originals/5d/8a/95/5d8a956fbdecf3f31f8f7606c33b034c.jpg");
+    background-size: 10%;
+    /*background-repeat: repeat-x;*/
+    background-color: darkkhaki;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.friendly {
+    height: 100px;
+    width: 200px;
+    background-color: wheat;
+    float: left;
+}
+.wrapper {
+overflow: auto;
+clear: both;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: blueviolet;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 20px 30px 40px;
+}
+.block {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+}
+.block-1 {
+    background: pink;
     
-    color: green;
-   
+    top: 100px;
+    left: 200px;
+    z-index: 1;
 }
-p:nth-last-of-type(2n+1) {
-    color: green;
+.block-2 {
+    background: violet;
+    top: 150px;
+    left: 150px;
+    z-index: 2;
 }
-.red-p {
-    color: red;
+.block-3 {
+    background: lightgreen;
+    top: 175px;
+    left: 175px;
 }
-.blue-p {
-    color: blue;
+
+.flex-block {
+    border: 1px solid red;
+
+    margin: 0px;
 }
-[data-foo] {
-    color: violet;
-}
-.blue-p > span {
-    color: yellow;
-}
-strong > span {
-    color: pink;
-}
-.super-strange-paragraph > span:hover {
-    color: red;
+
+.flex-wrapper {
+    display: flex;
+    
 }

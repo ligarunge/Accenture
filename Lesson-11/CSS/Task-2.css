@@ -1,0 +1,25 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+.row {
+    display: flex;
+}
+.cell {
+    background-color: lightsalmon;
+    border: solid 2px palevioletred;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+}
+.big {
+   
+    flex-basis: 300%;
+}
+.big-1 {
+    flex-basis: 300%;
+}
+.big-2 {
+    flex-basis: 400%;
+}

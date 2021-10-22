@@ -1,0 +1,48 @@
+.color {
+    background-color: cadetblue;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    background-color: darkgoldenrod;
+    
+}
+.border-right {
+    border: 1px solid #ccc;
+}
+.box-left {
+    width: 25%;
+}
+.box-right {
+    width: 75%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .box-left {
+        width: 50%;
+    }
+    .box-right {
+        Width: 50%
+
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .color {
+        background-color: red;
+}
+@media only screen and (max-width: 500px) {
+    .box-left {
+        width: 100%;
+    }
+    .box-right {
+        Width: 100%
+
+    }
+
+}
