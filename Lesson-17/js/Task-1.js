@@ -1,22 +1,28 @@
-//let number1 = 7;
-//let number2 = 10;
-//if (number1 > number2) {
-    //console.log('First number is bigger');}
-//else if(number1 < number2) {
-    //console.log('Second number is bigger');
-//}
+//TASK 1
+let number1 = 7;
+let number2 = 10;
+if (number1 > number2) {
+    console.log('1. First number is bigger');}
+else if(number1 < number2) {
+    console.log('1. Second number is bigger');
+}
 
-//else {
-   // console.log('Numbers are the same');
-//}
+else {
+    console.log('1. Numbers are the same');
+}
 
 //TASK 2
-let number1 = 30;
-let number2 = 100;
-let number3 = 25;
-if (number1 > number2 && number2 > number3) {
-    console.log('First number is the biggest');}
-  
+let num1 = 300;
+let num2 = 100;
+let num3 = 2555;
+if (num1 > num2 && num2 > num3) {
+    console.log('2. First number is the biggest');}
+  else if (num2 > num1 && num1 > num3) {
+      console.log('2. Second number is the biggest');
+  }
+  else {
+      console.log('Third number is the biggest');
+  }
 
 
 
@@ -24,92 +30,151 @@ if (number1 > number2 && number2 > number3) {
 let numberA = 9;
 
 if (numberA % 2 == 0) {
-    console.log('The number is even');
+    console.log('3. The number is even');
 }
 else {
-    console.log('The number is odd');
+    console.log('3. The number is odd');
 }
 // TASK 4
 let num = 30;
 if (num > 0) {
-    console.log('The number is positive');
+    console.log('4. The number is positive');
 }
 else if (num == 0) {
-    console.log('The number is zero');
+    console.log('4. The number is zero');
 }
 else {
-    console.log('The number is negative');
+    console.log('4. The number is negative');
 }
 
 // TASK 5
 let num5 = 41;
 if (num5 % 5 == 0) {
-    console.log('The number can be divided by 5');
+    console.log('5. The number can be divided by 5');
 }
 else if (num5 % 11 == 0) {
-    console.log('The number can be divided by 11');
+    console.log('5. The number can be divided by 11');
 }
 else {
-    console.log('Not dividable by 5 or 11');
+    console.log('5. Not dividable by 5 or 11');
 }
 
 //TASK 6
 const leapYear = 2024;
 let year = 1752;
 if ((leapYear - year) % 4 == 0) {
-    console.log('This is a leap year');
+    console.log('6. This is a leap year');
 }
 else {
-    console.log('This is a normal 365 day year');
+    console.log('6. This is a normal 365 day year');
 }
 
 //TASK 8
+
+let month = 9;
+if (month == 4 || month == 6 || month == 9 || month == 11) {
+    console.log('8. This month has 30 days');
+}
+
+else if (month == 2) {
+    console.log('8. This month has 28 days');
+}
+else {
+    console.log('8. This month has 31 days');
+}
+
+//TASK 9
+let amount = 12;
+const note1 = 50;
+const note2 = 20;
+const note3 = 10;
+const note4 = 5;
+if (amount >= 50) {
+    console.log(amount / note1);
+}
+else if (amount >= 20) {
+    console.log(amount / note2);
+}
+else if (amount >= 10) {
+    console.log(amount / note3);
+}
+else {
+    console.log(amount / note4);
+}
+
 
 //TASK 10
 let angle1 = 90;
 let angle2 = 30;
 let angle3 = 15;
 if (angle1 + angle2 + angle3 == 180) {
-    console.log('This is a valid triangle');
+    console.log('10. This is a valid triangle');
 }
 else {
-    console.log('This triangle does not exist');
+    console.log('10. This triangle does not exist');
 }
 
 //TASK 11
+
+let sideA = 200;
+let sideB = 20;
+let sideC = 20;
+
+if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+    console.log('11. This is a valid triangle');
+}
+else {
+    console.log('11. The triangle is NOT valid');
+}
+
+//TASK 12
+let sideA2 = 30;
+let sideB2 = 50;
+let sideC2 = 80;
+
+if (sideA2 == sideB2 && sideB2 == sideC2) {
+    console.log('12. This is a equilateral triangle');
+}
+else if (sideA2 == sideB2 || sideA2 == sideC2 || sideB2 == sideC2) {
+    console.log('12. This is a isosceles triangle');
+}
+
+else {
+console.log('12. This is a scalene triangle');
+}
 
 //TASK 13
 
 let age = 43;
 if (age <=18) {
-    console.log('You are younger than 18');}
+    console.log('13. You are younger than 18');}
     else if (age >=19 && age <=30) {
-        console.log('You are in the group from 19 to 30');
+        console.log('13. You are in the group from 19 to 30');
     }
     else if (age >=31 && age <=40) {
-        console.log('You are in the group from 31 to 40');
+        console.log('13. You are in the group from 31 to 40');
     }
     else if (age >=41 && age <=50) {
-        console.log('You are in the group from 41 to 50');
+        console.log('13. You are in the group from 41 to 50');
     }
     else if (age >=51) {
-        console.log('You are in the group 51+');
+        console.log('13. You are in the group 51+');
     }
 
 
 //TASK 14
 let num14 = 60;
 if (num14 % 2 == 0 && num14 % 3 == 0) {
-    console.log('Fizz Bazz');
+    console.log('14. Fizz Bazz');
 }
 
 else if (num14 % 3 == 0) {
-    console.log('Bazz');
+    console.log('14. Bazz');
 }
 else if (num14 % 2 == 0) {
-    console.log('Fizz');
+    console.log('14. Fizz');
 }
 else {
-    console.log(num14);
+    console.log(`14. ${num14}`);
 }
 
