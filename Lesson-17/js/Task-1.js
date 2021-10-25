@@ -84,22 +84,19 @@ else {
 }
 
 //TASK 9
-let amount = 12;
+let amount = 340;
 const note1 = 50;
 const note2 = 20;
 const note3 = 10;
 const note4 = 5;
-if (amount >= 50) {
-    console.log(amount / note1);
+if (amount % 50 == 0) {
+    console.log(amount/ 50);
 }
-else if (amount >= 20) {
-    console.log(amount / note2);
+else if (amount % 50 >= 20 && (amount % 50) % 20 == 0 ) {
+    console.log(((amount - (amount % 50)) / 50) + ((amount % 50) / 20));
 }
-else if (amount >= 10) {
-    console.log(amount / note3);
-}
-else {
-    console.log(amount / note4);
+else if (amount % 50 >= 20 && (amount % 50) % 20 >= 10 && ((amount % 50) % 20) % 10 == 0 ) {
+    console.log((((amount - (amount % 50)) / 50) + ((amount - (amount - (amount % 50))) - ((amount % 50) % 20)) / 20) + (amount % 50 % 20 / 10));
 }
 
 
