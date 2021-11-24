@@ -130,4 +130,90 @@ if (someAge > 18) {
             {
                 console.log('Your car is Ferrari') //AND &&
             }
+        const route = '/about-us';
+
+        // SWITCH STATEMENT
+        switch (route) {
+            case '/contact-us':
+                console.log('Visiting contacts page');
+                break;
         
+        case '/about-us':
+                console.log('Visiting about us page');
+                break;
+        
+        case '/products':
+                console.log('Visiting products page');
+                break;
+        
+        case '/pricing':
+                console.log('Visiting pricing page');
+                break;
+        
+        default:
+            console.log('404 page not found');
+        }
+
+// LOOPS
+        //while (true) {
+           // console.log('Hello world');
+        //} infinite loop - will execute this over and over again
+
+        let number = 1;
+        while (number <= 10) {
+            console.log('The number is:' + number);
+            //number = number + 1;
+            //number += 1;
+            number++; //only increments by 1
+        }
+
+        // DO WHILE LOOP
+
+        //let numberDo = 1;
+        //do {
+            //console.log('The number is' + numberDo);
+            //numberDo++;
+        //} while(numberDo > 10);
+
+        // FOR LOOP
+        //for (let i = 0; i <= 10; i++) {
+            //console.log('The number is:' + i);
+        //}
+    
+    const carsFor = ['vaz', 'zaz', 'gaz', 'maz', 'uaz'];
+    for (let i = 0; i < carsFor.length; i++ ) {
+        const car = carsFor[i]
+        console.log(car + ' is a nice car!');
+    }
+
+    // FOR IN
+    for (let index in carsFor) {
+        console.log(index);
+    } //represents the key of the elements."index" can be just any name
+
+    // FOR OF
+    for (let car of carsFor) {
+        console.log(car);
+    } // gives the actual value of the array
+
+    let numberNew = 1;
+    sum = 0;
+    while (numberNew <= 20) {
+        sum += numberNew;
+        
+        numberNew++;
+        if (numberNew % 2 == 0) {
+        continue; }
+        //it will start the code over again
+        console.log(numberNew);
+    }
+    console.log('The sum is: ' + sum);
+
+    let numberA = 1;
+    while (numberA <= 10) {
+        console.log(numberA);
+        numberA++;
+        if (numberA == 5) {
+            break;
+        }
+    }

@@ -160,7 +160,7 @@ if (age <=18) {
 
 
 //TASK 14
-let num14 = 60;
+let num14 = 10;
 if (num14 % 2 == 0 && num14 % 3 == 0) {
     console.log('14. Fizz Bazz');
 }
@@ -175,3 +175,21 @@ else {
     console.log(`14. ${num14}`);
 }
 
+//TASK LESSON 18
+
+let num18 = 0;
+while (num18 <= 200) {
+    num18++;
+    if (num18 % 2 == 0 && num18 % 3 == 0) {
+        console.log('Fizz Bazz');
+    }
+    else if (num18 % 3 == 0) {
+        console.log('Bazz');
+    }
+    else if (num18 % 2 == 0) {
+        console.log('Fizz');
+    }
+    else {
+        console.log(`${num18}`);
+    }
+}

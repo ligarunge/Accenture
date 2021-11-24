@@ -25,7 +25,7 @@
     background: none;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    :hover
+    
 }
  .row {
      display: flex;
