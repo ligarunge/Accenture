@@ -118,4 +118,25 @@ width: 100%;
       display: inline-block;
       margin-left: 100px;
   }
+  .batman {
+      height: 8vh;
+  }
  
+.batmanText {
+    color: rgb(27, 28, 29);
+    font-weight: bolder;
+}
+.headingFirst {
+    color: rgb(58, 69, 83);
+}
+a:link {
+    color: inherit;
+    text-decoration: none;
+   
+
+  }
+  a:hover {
+    color:rgb(27, 28, 29);
+    font-weight: bold;
+  }
+  
