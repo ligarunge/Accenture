@@ -107,3 +107,15 @@ width: 100%;
   }
   
   .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  .big {
+      height: 40vh;
+  }
+  .list-group-item {
+    background: #f2f6e9;
+  }
+  .centeredTime {
+      display: inline-block;
+      margin-left: 100px;
+  }
+ 
