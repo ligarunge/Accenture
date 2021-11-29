@@ -38,7 +38,8 @@
             </ul>
         </div>
     </header>
-    <div class="container p-3" style="background-color: sandybrown;">
+ 
+    <div class="container p-3">
         <div>
           <p><a href="index.html" class="link">Home </a>
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -49,7 +50,7 @@
          <div class="row"><h5>Chat</h5>
          </div>
        
-       <div class="container p-4 container-chat border border-dark" style="background-color: skyblue;">
+       <div class="container container-chat border border-secondary" style="border-radius:5px">
                 <div class="row">
              <div class="card">
                         <div class="card-body">
@@ -58,28 +59,23 @@
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab incidunt repudiandae. Esse dolorum inventore fugiat perspiciatis sapiente praesentium blanditiis voluptatum quod impedit aliquid dolores porro fuga id, sed aut.</p>
                         </div>
                       </div></div>                
-        <div class="row">
-        <div class="card" id="newMessage">
-            <div class="card-body">
-              <h5 class="card-title" id="usernameSent"></h5>
-              <h6 class="card-subtitle mb-2 text-muted" id="time"></h6>
-              <p class="card-text" id="messageSent"></p>
-            </div>
-      </div></div></div>
+        <div class="row" id="newMessage">
+        
+           </div></div>
 
-            <div class="row border-top border-dark" style="background-color:rgb(0, 255, 34);">
+            <div class="row">
                 <div class="col-2 m-1">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control border border-secondary" id="usernameChat">
+                    <label for="username"></label>
+                    <input type="text" class="form-control border border-secondary" placeholder="*Your Name" id="usernameChat">
                 </div>
             </div>
             <div class="row">
-                <div class="col-10"style="background-color: yellow;">
-                    <label for="message">Message</label>
-                    <textarea class="textarea-chat border border-secondary" id="message"></textarea>
+                <div class="col-10">
+                    <label for="message"></label>
+                    <textarea class="form-control  border border-secondary" placeholder="  *Your Message" style="width:100%; border-radius: 5px;" id="message"></textarea>
                 </div>
                 <div class="col-1 mt-4">
-                    <button class="btn btn-secondary" id="sendMessage" onclick="sendChatMessage()">Send</button>
+                    <button class="btn btn-secondary btn-lg" id="sendMessage" onclick="sendChatMessage()">Send</button>
             </div></div>
          </div>
         </div>

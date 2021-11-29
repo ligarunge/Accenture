@@ -152,7 +152,7 @@ a {
     font-weight: bold;
   }
    .container-chat {
-       height: 60vh;
+       height: 50vh;
        overflow-y: scroll;
    }
    .textarea-chat {
@@ -164,38 +164,48 @@ a {
    .gallery {
        height: 150px;
    }
-   .tabs {
-       display: flex;
-       flex-wrap: wrap;
-       max-width:500px;
-       margin: 50px auto;
-       padding: 25px;
-   }
-   .tabs input[type="radio"] {
-       display: none;
-   }
-   .tabs label {
-       padding: 25px;
-       background:rgb(58, 69, 83);
-       font-weight: bold;
-   }
+.card {
+    background-color: rgb(179, 223, 179);
+    padding: 5;
+    font-size: 0.9rem;
+}
 
-   .tabs .tab {
-       width: 100%;
-       padding: 20px;
-       background: skyblue;
-       order: 1;
-       display: none;
-   }
-   .tabs .tab h2 {
-       font-size: 3em;
-   }
-   .tabs input[type='radio']:checked + label + .tab {
-       display: block;
-   }
-   .tabs input[type="radio"]:checked + label {
-       background: slateblue;
-   }
+
+   .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
    .rounded-border {
     border-radius: 50px;
     border: 2px solid rgb(134, 155, 161);
@@ -235,4 +245,7 @@ a {
 }
 .card-title {
     font-size: 1rem;
+}
+.thankyou {
+    height: 61vh;
 }

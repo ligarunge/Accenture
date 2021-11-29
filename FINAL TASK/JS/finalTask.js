@@ -138,22 +138,20 @@ function showSuccess(input) {
    n = today.toLocaleDateString();
    n = n.replace(/\//g, '.');
    var time = today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-   
-     
      const message = document.getElementById('message');
      const username = document.getElementById('usernameChat');
-     //const newMessage = `<div class="messageCell">${message.value}</div>`;
-     //const newUsername = `<div class="usernameCell">${username.value}</div>`
      const timeNow = n + ' ' + time;
+     if(username.value == '' || message.value == '') {
+       return false;
+     }
 
     userMessage = `
-    <div class="card" style="width: 80%;">
+    <div class="card">
         <div class="card-body">
           <h5 class="card-title" id="usernameSent">${username.value}</h5>
-          <h6 class="card-subtitle mb-2 text-muted" id="time">${time}</h6>
+          <h6 class="card-subtitle mb-2 text-muted" id="time">${timeNow}</h6>
           <p class="card-text" id="messageSent">${message.value}</p>
-        </div>
+        </div></div>
     `
     document.getElementById('newMessage').innerHTML += userMessage;
 
@@ -162,4 +160,25 @@ function showSuccess(input) {
      return;
  }
 
+ function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+ 
+}
 
