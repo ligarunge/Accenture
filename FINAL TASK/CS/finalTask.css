@@ -87,7 +87,7 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*border: solid 1px blue;*/
+   
 }
 
 .thumbnail img {
@@ -95,7 +95,7 @@ width: 100%;
     max-height: 100%;
     display: block;
     margin: 0 auto;
-    /*border: solid 1px red;*/
+    
 }
 .pagination {
     display: inline-block;
@@ -166,10 +166,11 @@ a {
    }
 .card {
     background-color: rgb(179, 223, 179);
-    padding: 5;
+    margin: 1rem;
+    margin-bottom: none;
     font-size: 0.9rem;
+    width: 98%;
 }
-
 
    .tab {
     overflow: hidden;
@@ -177,7 +178,7 @@ a {
     background-color: #f1f1f1;
   }
   
-  /* Style the buttons that are used to open the tab content */
+ 
   .tab button {
     background-color: inherit;
     float: left;
@@ -188,17 +189,14 @@ a {
     transition: 0.3s;
   }
   
-  /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: #ddd;
   }
   
-  /* Create an active/current tablink class */
   .tab button.active {
     background-color: #ccc;
   }
   
-  /* Style the tab content */
   .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -249,3 +247,7 @@ a {
 .thankyou {
     height: 61vh;
 }
+.card-container {
+    background: #f2f6e9;
+}
+

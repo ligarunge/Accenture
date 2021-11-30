@@ -130,6 +130,7 @@ function showSuccess(input) {
 
 
  function sendChatMessage() {
+  document.getElementById('fieldsEmpty').innerHTML = '';
     var today = new Date();
     var date = today.getFullYear()+"."+(today.getMonth()+1)+'-'+today.getDate();
     var time = today.getHours() + ":" + today.getMinutes();
@@ -138,47 +139,50 @@ function showSuccess(input) {
    n = today.toLocaleDateString();
    n = n.replace(/\//g, '.');
    var time = today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+   
      const message = document.getElementById('message');
      const username = document.getElementById('usernameChat');
      const timeNow = n + ' ' + time;
-     if(username.value == '' || message.value == '') {
+     const newMessage = document.getElementById('newMessage');
+
+     if(message.value == '' || username.value == '') {
+      document.getElementById('fieldsEmpty').innerHTML = 'One of the fields are empty!'
        return false;
      }
-
+  
     userMessage = `
-    <div class="card">
+    <div class="card" id="newMessage">
         <div class="card-body">
           <h5 class="card-title" id="usernameSent">${username.value}</h5>
           <h6 class="card-subtitle mb-2 text-muted" id="time">${timeNow}</h6>
           <p class="card-text" id="messageSent">${message.value}</p>
         </div></div>
     `
-    document.getElementById('newMessage').innerHTML += userMessage;
-
+    newMessage.insertAdjacentHTML('beforebegin', userMessage);
+  
      message.value = '';
      username.value = '';
+    
      return;
  }
 
- function openCity(evt, cityName) {
-  // Declare all variables
+ document.getElementsByClassName('tablinks')[0].click();
+ function openCat(evt, catName) {
+ 
   var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(catName).style.display = "block";
   evt.currentTarget.className += " active";
- 
+  
 }
 

@@ -52,21 +52,25 @@
        
        <div class="container container-chat border border-secondary" style="border-radius:5px">
                 <div class="row">
+                    <div class="row" id="newMessage">
+        
+                    </div>
              <div class="card">
                         <div class="card-body">
                           <h6 class="card-title">Peteris</h6>
-                          <p class="card-subtitle mb-2 text-muted">29.11.2017 18:30</p>
+                          <p class="card-subtitle mb-2 text-muted" style="font-weight: bold">29.11.2017 18:30</p>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab incidunt repudiandae. Esse dolorum inventore fugiat perspiciatis sapiente praesentium blanditiis voluptatum quod impedit aliquid dolores porro fuga id, sed aut.</p>
                         </div>
                       </div></div>                
-        <div class="row" id="newMessage">
-        
-           </div></div>
+        </div>
 
             <div class="row">
-                <div class="col-2 m-1">
+                <div class="col-6 m-1">
                     <label for="username"></label>
                     <input type="text" class="form-control border border-secondary" placeholder="*Your Name" id="usernameChat">
+                </div>
+                <div class="col-5 pt-4 m-1">
+                    <p id="fieldsEmpty" style="color: red; font-weight: bold"></p>
                 </div>
             </div>
             <div class="row">
